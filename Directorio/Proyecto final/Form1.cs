@@ -7,29 +7,41 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Exel = Microsoft.Office.Interop.Excel;
+using System.IO;
+using System.Collections;
+using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
+using Excel = Microsoft.Office.Interop.Excel;
 
 namespace Proyecto_final
 {
     public partial class Directorio : Form
     {
-        public Directorio()
+      
+          public Directorio()
         {
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
 
+          private void correo_Click(object sender, EventArgs e)
+          {
+              Correo enviar = new Correo();
+              enviar.Show();
+          }
+
+         
+
+
+        
+        private void acciones_Click(object sender, EventArgs e)
+        {
+            Acciones hacer = new Acciones();
+                hacer.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            agregar agregar = new agregar();
-            agregar.Show();
-        }
-
-    
-
+      
      
 
         

@@ -14,10 +14,11 @@ namespace Proyecto_final
         public static MySqlConnection abrirConexion()
         {
             MySqlConnection myConexion = new MySqlConnection(
-                "Data source=localhost;"+
-                "Initial Catalog=directorio;"+
-                "User Id=PORTERYYTHO;"+
-                "Password=1993");
+                "Server=127.0.0.1;"+
+                "Database=directorio;"+
+                "User ID= JUAN2;"+
+                "Password=;"+
+                "pooling=false;");
                 
             myConexion.Open();
 
@@ -25,7 +26,9 @@ namespace Proyecto_final
 
         }
 
-     
+
+
+        
     }
 }
 

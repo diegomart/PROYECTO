@@ -57,10 +57,9 @@
             this.TEL = new System.Windows.Forms.TextBox();
             this.apa = new System.Windows.Forms.TextBox();
             this.nom = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.ID = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.MAPA = new System.Windows.Forms.TextBox();
+            this.Limpiar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -191,9 +190,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(551, 286);
+            this.button1.Location = new System.Drawing.Point(568, 273);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(158, 53);
+            this.button1.Size = new System.Drawing.Size(128, 56);
             this.button1.TabIndex = 14;
             this.button1.Text = "Guardar";
             this.button1.UseVisualStyleBackColor = true;
@@ -299,26 +298,10 @@
             this.nom.Size = new System.Drawing.Size(84, 20);
             this.nom.TabIndex = 28;
             // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(242, 286);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(18, 13);
-            this.label15.TabIndex = 29;
-            this.label15.Text = "ID";
-            // 
-            // ID
-            // 
-            this.ID.Location = new System.Drawing.Point(266, 283);
-            this.ID.Name = "ID";
-            this.ID.Size = new System.Drawing.Size(54, 20);
-            this.ID.TabIndex = 30;
-            // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(368, 286);
+            this.label16.Location = new System.Drawing.Point(263, 286);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(34, 13);
             this.label16.TabIndex = 31;
@@ -326,10 +309,20 @@
             // 
             // MAPA
             // 
-            this.MAPA.Location = new System.Drawing.Point(402, 283);
+            this.MAPA.Location = new System.Drawing.Point(303, 283);
             this.MAPA.Name = "MAPA";
             this.MAPA.Size = new System.Drawing.Size(90, 20);
             this.MAPA.TabIndex = 32;
+            // 
+            // Limpiar
+            // 
+            this.Limpiar.Location = new System.Drawing.Point(434, 273);
+            this.Limpiar.Name = "Limpiar";
+            this.Limpiar.Size = new System.Drawing.Size(128, 56);
+            this.Limpiar.TabIndex = 33;
+            this.Limpiar.Text = "Limpiar";
+            this.Limpiar.UseVisualStyleBackColor = true;
+            this.Limpiar.Click += new System.EventHandler(this.Limpiar_Click);
             // 
             // agregar
             // 
@@ -337,10 +330,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.ClientSize = new System.Drawing.Size(712, 341);
+            this.Controls.Add(this.Limpiar);
             this.Controls.Add(this.MAPA);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.ID);
-            this.Controls.Add(this.label15);
             this.Controls.Add(this.nom);
             this.Controls.Add(this.apa);
             this.Controls.Add(this.TEL);
@@ -411,9 +403,8 @@
         private System.Windows.Forms.TextBox TEL;
         private System.Windows.Forms.TextBox apa;
         private System.Windows.Forms.TextBox nom;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox ID;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox MAPA;
+        private System.Windows.Forms.Button Limpiar;
     }
 }
